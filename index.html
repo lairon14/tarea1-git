@@ -132,6 +132,23 @@
           
           local repo: Este consta de tres elementos que mantiene el git.
           Estos son: working directory, index y head.
+          <br/><br/>
+          
+          remote repo: son versiones del proyecto que se trabaja actualmente´
+          lo cuales estan alojados en algun lugar en internet. Se puede tener varios
+          alojados, de forma solo lectura o lectura/escritura, dependiendo de los
+          permisos indicados.
+          <br/><br/>
+          
+          dirty working tree: es un directorio en el cual se realizaron
+          modificaciones pero aun no han sido committed a la rama actual.
+          <br/><br/>
+          
+          merge conflict: es resultado del merge entre dos versiones de un
+          mismo archivo que se encuentran en ramas diferentes. El merge conflict
+          ocurre cuando ambos archivos son comparados linea a linea y hay
+          discrepancia.
+          <br/><br/>
         </div>
       </article>
       <article id="q4">
@@ -161,19 +178,19 @@
             <tbody>
               <tr>
                 <th scope="row">working dir</th>
+                <td>R</td>
                 <td></td>
+                <td>R</td>
                 <td></td>
+                <td>W</td>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>W</td>
               </tr>
               <tr>
                 <th scope="row">index</th>
+                <td>R</td>
                 <td></td>
-                <td></td>
-                <td></td>
+                <td>W</td>
                 <td>R/W</td>
                 <td></td>
                 <td></td>
@@ -182,12 +199,12 @@
               <tr>
                 <th scope="row">local repo</th>
                 <td></td>
-                <td></td>
-                <td></td>
                 <td>W</td>
                 <td></td>
-                <td></td>
-                <td></td>
+                <td>W</td>
+                <td>W</td>
+                <td>R</td>
+                <td>R</td>
               </tr>
               <tr>
                 <th scope="row">remote repo</th>
@@ -195,8 +212,8 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
-                <td></td>
+                <td>R/W</td>
+                <td>R/W</td>
                 <td></td>
               </tr>
             </tbody>
