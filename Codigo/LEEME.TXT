@@ -1,9 +1,0 @@
-  Tarea 1
-  Programa: scrable.c
-  Realizado por: Lairon Acosta
-  Version: 1.0
-
-
-Compilar en terminal con: # gcc scrable.c -o scrable
-Ejecutar en terminal con: # ./scrable sowpods.txt
-Borrar aplicacion: # rm scrable
